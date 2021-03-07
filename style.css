@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background:/* #cccccc;*/linear-gradient(to right top, #cccccc, white);
+    height: 100vh;
+}
+
+.title h1 {
+    font-size: 48px;
+    background: linear-gradient( to left bottom, #6C63FF, #F10E37);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.title {
+    position: absolute;
+    top:5%;
+    left: 50%;
+    transform: translate(-50%, -5%);   
+}
+
+.img2020 {
+    position: absolute;
+    bottom: 10%;
+}
+
+#cap1 {
+    animation: cap1 1s infinite;
+}
+
+#cap {
+    animation: cap 1s infinite;
+}
+
+#hat {
+    animation: hat 1s infinite;
+    
+}
+
+@keyframes cap1 {
+    from {
+        transform: rotateX(20deg);
+    }
+    to {
+        transform: rotateX(-20deg);
+    }
+}
+
+@keyframes cap {
+    from {
+        transform: rotateX(30deg);
+    }
+    to {
+        transform: rotateX(-30deg);
+    }
+}
+
+@keyframes hat {
+    from {
+        transform: rotateX(25deg);
+    }
+    to {
+        transform: rotateX(-25deg);
+    }
+}
